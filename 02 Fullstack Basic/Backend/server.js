@@ -11,7 +11,7 @@ const app = express()
 
 const port = process.env.PORT || 3000;
 
-app.get('/jokes',(req,res)=>{
+app.get('/api/jokes',(req,res)=>{
 
     const jokes = [
         {
@@ -41,6 +41,6 @@ app.get('/jokes',(req,res)=>{
 })
 
 app.listen(port,()=>{
-    console.log(`App Running at http://localhost:${port}/jokes`);
+    console.log(`App Running at http://localhost:${port}/api/jokes`);
     
 })
